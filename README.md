@@ -28,15 +28,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between `.forEach` & `.map`.  
+.map will always create a new array containing the results of the computation, while you don't have to create a new array for .forEach.  
 
-2. What is the difference between a function and a method?
+2. What is the difference between a function and a method?  
+    A method is always a function, but a function is not always a method. Methods are what functions are called if they are attached to a Object/Class.  
 
-3. What is closure?
-
-4. Describe the four rules of the 'this' keyword.
+3. What is closure?  
+    Closure is a way to remember a specific scope for a function that cannot be accessed regularly. For example, if there is an object/function that returns another function within its scope. By invoking that function with specific arguments and saving it to another variable, you can now invoke that nested function with the memory of the argument you passed in without having to call that argument.  
+4. Describe the four rules of the 'this' keyword.  
+    The four rules of 'this' is the four different ways of what 'this' refers to.  
+    - Window Object: When using this in the global scope, it will point to the window/console object.   
+    - Implicit This: Refers to the object that invokes the method 'this' is used in.  
+    - New this: When creating a new object, 'this' refers to the object being created.  
+    - Explicit This: 'this' refers to the object being passed in to a Object.method.call(2nd object) as an argument. It will use the method of the first object but with the data from the 2nd object.
 
 5. Why do we need super() in an extended class?
+    super() will allow inheritance from the parent class.  
 
 ## Project Set up
 
